@@ -1,14 +1,14 @@
 # Degree
-- degree: Associates Degree, Business Management
-  uni: Springfield College
-  year: 1984 &mdash; 1986
+- degree: Bachelor's Degree, Computer Engineering
+  uni: Marquette University
+  year: 2013 &mdash; 2018
   awards:
-    - award: Quickest to fall asleep
-    - award: Fastest donut eater
-  summary: If you had any meaningful roles at college, feel free to write about them here
+    - award: Cumulative and Major GPA&#58; 3.4
+    - award: Worked full-time as a Co-op in 2016
+  #summary: If you had any meaningful roles at college, feel free to write about them here
 
 - degree: High School Diploma
-  uni: Springfield High
-  year: 1984
-  award: Least likely to graduate College
-  summary: You can choose to have either a single or multiple awards
+  uni: York Community High School
+  year: 2013
+  #award: Least likely to graduate College
+  #summary: You can choose to have either a single or multiple awards
