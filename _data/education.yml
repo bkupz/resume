@@ -3,12 +3,11 @@
   uni: Marquette University
   year: 2013 &mdash; 2018
   awards:
-    - award: Cumulative and Major GPA&#58; 3.4
+    - award: Cumulative GPA&#58; 3.4
+    - award: Major GPA&#58; 3.4
     - award: Worked full-time as a Co-op in 2016
   #summary: If you had any meaningful roles at college, feel free to write about them here
 
-- degree: High School Diploma
-  uni: York Community High School
-  year: 2013
-  #award: Least likely to graduate College
-  #summary: You can choose to have either a single or multiple awards
+#- degree: High School Diploma
+#  uni: York Community High School
+#  year: 2013

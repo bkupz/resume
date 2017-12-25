@@ -4,7 +4,7 @@
   position: Undergraduate Researcher
   duration: Jun, 2017 &mdash; present
   summary:  <ul class="resume-item-list">
-              <li>Designed and implemented a parallelized version of the Viola-Jones Computer Vision Algorithm</li>
+              <li>Utilized OpenCV to parse a video stream and applied the Viola-Jones computer vision algorithm to each frame via a parallelized architecture</li>
               <li>Attaining in-depth knowledge of the C++ and Cuda languages</li>
             </ul>
 
@@ -13,10 +13,10 @@
   position: Software Installation / Development 
   duration: Jan, &mdash; Dec, 2016
   summary: <ul class="resume-item-list">
-              <li>Utilized Microsoft’s WPF in C#/XAML to develop tools</li>
+              <li>Utilized Microsoft’s WPF in C#/XAML to develop tools that monitored and edited system communications and visualized logs</li>
               <li>Used TFS to branch/merge migrations and manage builds for installations</li>
-              <li>Assisted Developers to design and implement backend and frontend code</li>
-              <li>Debugged and identified problems in a large/complex code base that improved problem solving techniques</li>
+              <li>Worked with developers to design and implement frontend and backend code</li>
+              <li>Identified and debugged problems in a large/complex code base that improved problem solving techniques</li>
             </ul>
 
 # Front Desk Attendant
@@ -24,3 +24,4 @@
   position: Co-leadership Role
   duration: Fall 2013 &mdash; present
   summary: I volunteer with local high school students as a mentor for about 5 to 10 hours per week.
+

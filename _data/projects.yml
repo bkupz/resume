@@ -6,7 +6,7 @@
   role: Final team project for Introduction to Artifical Intelegence
   #duration: 2012 &mdash; Present
   # url: "#"
-  description: nalysed NFL players and teams as a network to shed light on criminal activity. Found that there is a high betweenness in some of the NFL teams, meaning that some teams have a higher tolerance for crime.
+  description: Analysed NFL players and teams as a network to shed light on criminal activity. Found that there is a high betweenness in some of the NFL teams, meaning that some teams have a higher tolerance for crime.
 
 #Springfield Donut Eater's User Group
 - project: PBAutoRespond
