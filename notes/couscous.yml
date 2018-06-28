@@ -5,6 +5,8 @@ title: Brandon's Notes # Page Title
 logo: http://kupczyk.me/images/BK.jpg
 color: "#d21"
 
+baseUrl: http://kupczyk.me/notes/
+
 search: true # Enable search
 scripts:
     after:
