@@ -6,7 +6,7 @@ metaDescription: Couscous.    # description as used for the <meta name="descript
 
 pageLanguage: en            # language of the page
 
-prev: /      # previous page if pagination is used
+prev: /notes/index.html      # previous page if pagination is used
 prevTitle: Home  # title of previous page (default would be "page-before" here)
 ---
 # How to create and genereate this Couscous nonsense 
@@ -14,5 +14,6 @@ prevTitle: Home  # title of previous page (default would be "page-before" here)
 ## Directions
 - cd to dir where .md files lie i.e. Notes
 - run /Users/brandonkupczyk/.composer/vendor/couscous/couscous/bin/couscous generate 
-- run cp -r .couscous/generated/* / 
+- cd .couscous
+- run cp -r /generated/* ../ 
 - add to git and push!

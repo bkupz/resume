@@ -5,10 +5,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <meta name="description" content="Couscous.">
-        <link rel="icon" type="image/png" href="/icon.png">
+        <link rel="icon" type="image/png" href="http://kupczyk.me/notes/icon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share:400|Jaldi:400,700|Fira+Mono:400,700">
-        <link rel="stylesheet" href="/assets/base.css">
-        <link rel="stylesheet" href="/assets/lindoc.css">
+        <link rel="stylesheet" href="http://kupczyk.me/notes/assets/base.css">
+        <link rel="stylesheet" href="http://kupczyk.me/notes/assets/lindoc.css">
         <style>
             a,.results strong{color:#d21}
             button,input[type=submit],input[type=button],input[type=reset],.button,.search input[type=submit]{background-color:#d21}
@@ -28,15 +28,15 @@
     <body>
         <header>
             <h1>
-                <a href="/world/"><img src="http://kupczyk.me/images/BK.jpg" alt="Brandon&#039;s Notes"></a>
+                <a href="http://kupczyk.me/notes/world/"><img src="http://kupczyk.me/images/BK.jpg" alt="Brandon&#039;s Notes"></a>
             </h1>
             <!-- THIS DOCUMENT IS INDEXED -->
-            <div class="search" role="search"><form data-baseurl="" onsubmit="search(this); return false;">
+            <div class="search" role="search"><form data-baseurl="http://kupczyk.me/notes" onsubmit="search(this); return false;">
                 <input type="text" class="search-query" oninput="search(this.parentElement)" placeholder="Search...">
                 <input type="submit" value="➜">
             </form><div class="results"></div></div>
             <nav class="breadcrumbs">
-                <a href="/world/">Brandon&#039;s Notes</a> » <strong>example</strong>
+                <a href="http://kupczyk.me/notes/world/">Brandon&#039;s Notes</a> » <strong>example</strong>
             </nav>
         </header>
 
@@ -46,7 +46,7 @@
                 <template search-description>How to Couscous</template>
 
                 <nav class="pagination">
-                    <div>« <a href="/">Home</a></div>
+                    <div>« <a href="http://kupczyk.me/notes/notes/index.html">Home</a></div>
                     <div></div>
                 </nav>
 
@@ -56,12 +56,13 @@
 <ul>
 <li>cd to dir where .md files lie i.e. Notes</li>
 <li>run /Users/brandonkupczyk/.composer/vendor/couscous/couscous/bin/couscous generate </li>
-<li>run cp -r .couscous/generated/* / </li>
+<li>cd .couscous</li>
+<li>run cp -r /generated/* ../ </li>
 <li>add to git and push!</li>
 </ul>
 <!-- CONTENT END -->
                 <nav class="pagination">
-                    <div>« <a href="/">Home</a></div>
+                    <div>« <a href="http://kupczyk.me/notes/notes/index.html">Home</a></div>
                     <div></div>
                 </nav>
             </article>
@@ -70,7 +71,7 @@
                 <h2>About mintlook</h2>
                 <h3>Links</h3>
                 <div class="bulletlink"><a href="/example.html">Example</a></div>
-                <div class="bulletlink"><a href="/">Mintlook and Couscous</a></div>
+                <div class="bulletlink"><a href="http://kupczyk.me/notes/">Mintlook and Couscous</a></div>
                 <hr>
                 <p>Follow us on <a href="http://kupczyk.me">Main Site</a>, <a href="http://instagram.com">Instagram</
 
@@ -86,14 +87,14 @@
             </footer>
         </main>
 
-        <script src="/assets/toc.js"></script>
+        <script src="http://kupczyk.me/notes/assets/toc.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/plugins/autoloader/prism-autoloader.min.js"></script>
         <script>Prism.plugins.autoloader.languages_path = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/";</script>
-        <link rel="stylesheet" href="/assets/prism.css">
+        <link rel="stylesheet" href="http://kupczyk.me/notes/assets/prism.css">
 
         <script src="https://cdn.jsdelivr.net/npm/js-search@1.4.2/dist/umd/js-search.min.js"></script>
-        <script src="/assets/search.js"></script>
+        <script src="http://kupczyk.me/notes/assets/search.js"></script>
     </body>
 </html>
