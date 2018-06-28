@@ -6,7 +6,7 @@ metaDescription: Home    # description as used for the <meta name="description">
 
 pageLanguage: en            # language of the page
 
-next: /notes/example.html     # next page if pagination is used
+next: /example.html     # next page if pagination is used
 nextTitle: An example page  # title of next page (default would be "example" here)
 ---
 # Couscous Mintlook

@@ -6,7 +6,7 @@ metaDescription: Couscous.    # description as used for the <meta name="descript
 
 pageLanguage: en            # language of the page
 
-prev: /notes/index.html      # previous page if pagination is used
+prev: /index.html      # previous page if pagination is used
 prevTitle: Home  # title of previous page (default would be "page-before" here)
 ---
 # How to create and genereate this Couscous nonsense 
