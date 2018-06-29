@@ -13,6 +13,7 @@ prevTitle: Home  # title of previous page (default would be "page-before" here)
 
 ## Directions
 - cd to dir where .md files lie i.e. Notes
+- run rm -r .couscous/
 - run /Users/brandonkupczyk/.composer/vendor/couscous/couscous/bin/couscous generate 
 - cd .couscous
 - run cp -r generated/* ../ 
