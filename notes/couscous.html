@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="lazyload">
+    <head>
+        <title>couscous · Brandon&#039;s Notes</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="description" content="Instructions">
+        <link rel="icon" type="image/png" href="http://kupczyk.me/notes/icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share:400|Jaldi:400,700|Fira+Mono:400,700">
+        <link rel="stylesheet" href="http://kupczyk.me/notes/assets/base.css">
+        <link rel="stylesheet" href="http://kupczyk.me/notes/assets/lindoc.css">
+        <style>
+            a,.results strong{color:#d21}
+            button,input[type=submit],input[type=button],input[type=reset],.button,.search input[type=submit]{background-color:#d21}
+            .search input[type=text]:focus,.results,.results strong{border-color:#d21 !important}
+            @media screen and (min-width:1450px){.livetoc a.active{ color:#d21}}
+        </style>
+        <script>
+            // Parent Elements - e.P("body") - https://gist.github.com/moqmar/0995cf6595201f7a062fb173cb4ab938
+            (function(E){E.matches||(E.matches=E.matchesSelector||E.msMatchesSelector||E.webkitMatchesSelector)})(Element.prototype)
+            Element.prototype.P=function(s){var e=this
+            if(!s||typeof s=="number")for(var i=0;i<(s||1);i++)e=e?e.parentElement:e
+            else if(typeof s=="string")while(e&&!e.matches(s))e=e.parentElement
+            else while(e&&e!=s)e=e.parentElement
+            return e}
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="http://kupczyk.me/notes/world/"><img src="http://kupczyk.me/images/BK.jpg" alt="Brandon&#039;s Notes"></a>
+            </h1>
+            <!-- THIS DOCUMENT IS INDEXED -->
+            <div class="search" role="search"><form data-baseurl="http://kupczyk.me/notes" onsubmit="search(this); return false;">
+                <input type="text" class="search-query" oninput="search(this.parentElement)" placeholder="Search...">
+                <input type="submit" value="➜">
+            </form><div class="results"></div></div>
+            <nav class="breadcrumbs">
+                <a href="http://kupczyk.me/notes/world/">Brandon&#039;s Notes</a> » <strong>couscous</strong>
+            </nav>
+        </header>
+
+        <main>
+            <aside class="toc"><ul></ul></aside>
+            <article>
+                <template search-description>Couscous usage instructions</template>
+
+                <nav class="pagination">
+                    <div>« <a href="http://kupczyk.me/notes/index.html">Home</a></div>
+                    <div><a href="http://kupczyk.me/notes/example.html">Couscous deployment Tutorial</a> »</div>
+                </nav>
+
+<!-- CONTENT START -->
+<h1 id="couscous-mintlook">Couscous Mintlook</h1>
+<p><img src="https://static.mo-mar.de/couscous-mintlook-mockup.jpg" alt="" /></p>
+<p><a href="https://moqmar.github.io/shell-setup/">Live Example</a></p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Search function</li>
+<li>Language selection</li>
+<li>Pagination (previous/next)</li>
+<li>Syntax highlighting</li>
+<li>Customizable sidebar and footer</li>
+<li>Configurable accent color</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>To use the template, set it up in your <code>couscous.yml</code> configuration file:</p>
+<pre><code class="language-yaml">template:
+    url: https://github.com/moqmar/mintlook-couscous</code></pre>
+<p>You should also add the file <a href="https://github.com/moqmar/mintlook-couscous/blob/master/404.html"><code>404.md</code></a> to your documentation and configure your webserver to point to <code>/404.html</code> on missing pages.</p>
+<p>A file <code>icon.png</code> in the project root (<code>baseUrl</code>) will be used as a favicon.</p>
+<h2 id="configuration">Configuration</h2>
+<pre><code class="language-yaml">title: Couscous # Page Title
+logo: https://cdn0.iconfinder.com/data/icons/ie_Shine/128/shine_19.png # Icon URL
+color: "#d21"   # Accent color
+
+languages: ["en", "de"] # List of supported languages. Comment out to disable language selection.
+defaultLanguage: world  # Default language icon, and the value of the html lang attribute. It is recommended to set this even (especially) if you're not using language selection.
+
+search: true # Enable search
+scripts:
+    after:
+        - php .couscous/generated/.scripts/generate-search-index.php # Required for search
+        - rm -rf .couscous/generated/.scripts # Clean up unneccessary files
+
+sidebar:
+    - title: About mintlook
+    - subtitle: Links
+    - text: Homepage
+      link: https://moqmar.github.io/mintlook # absolute link
+    - text: Mintlook and Couscous
+      page: / # relative link
+    - line: true
+    - html: |
+            &lt;p&gt;Follow us on &lt;a href=""&gt;Facebook&lt;/a&gt;, &lt;a href=""&gt;Twitter&lt;/a&gt;, and other &lt;a href=""&gt;social networks&lt;/a&gt;.&lt;/p&gt;
+# you can also define the sidebar per language
+sidebar:
+  de:
+    - title: Über mintlook
+  default: # fallback for all other languages
+    - title: About mintlook
+
+footer: |
+    Hello &lt;strong&gt;World&lt;/strong&gt;
+# you can also define the footer per language
+footer: # fallback for all other languages
+  de: Hallo &lt;strong&gt;Welt&lt;/strong&gt;
+  default: Hello &lt;strong&gt;World&lt;/strong&gt;</code></pre>
+<h3 id="language-selection">Language selection</h3>
+<p>If the <code>languages</code> configuration option is set, you should have a directory structure in the form of <code>/&lt;language&gt;/&lt;...&gt;</code>, with the pages in the <code>defaultLanguage</code> located at just <code>/&lt;...&gt;</code> - e.g. <strong>/de/something.html</strong> for the german version and <strong>/something.html</strong> for the english version.</p>
+<p>Setting the <code>defaultLanguage</code> to <code>world</code>, enforces the <code>/&lt;language&gt;/&lt;...&gt;</code> structure for all sites, and shows a world map instead of a flag for the language selection on pages not adhering to that structure.</p>
+<p>You can also override the displayed language for a single file using the <code>pageLanguage</code> metadata field.</p>
+<p>If you want to automatically go to the user's browser language, you can use the following <code>index.html</code> file in your repository:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;!-- default language --&gt;
+&lt;meta http-equiv="refresh" content="1; URL=en/"&gt;
+&lt;!-- browser language --&gt;
+&lt;script&gt;
+var supportedLanguages = ["en", "de"]; // Should be the same as in couscous.yml
+for (var i in navigator.languages) if (supportedLanguages.indexOf(navigator.languages[i]) &gt; -1) {
+    location.replace(navigator.languages[i] + "/"); break;
+}
+&lt;/script&gt;</code></pre>
+<h3 id="document-metadata">Document metadata</h3>
+<pre><code class="language-yaml">noIndex: false              # if true, the document will be excluded from search index
+
+description: A page.        # description as shown in search, also used for metaDescription if not explicitly set
+metaDescription: A page.    # description as used for the &lt;meta name="description"&gt; content
+
+pageLanguage: en            # language of the page
+
+prev: /page-before.md       # previous page if pagination is used
+prevTitle: The Page Before  # title of previous page (default would be "page-before" here)
+
+next: /test/example.md      # next page if pagination is used
+nextTitle: An example page  # title of next page (default would be "example" here)</code></pre>
+<!-- CONTENT END -->
+                <nav class="pagination">
+                    <div>« <a href="http://kupczyk.me/notes/index.html">Home</a></div>
+                    <div><a href="http://kupczyk.me/notes/example.html">Couscous deployment Tutorial</a> »</div>
+                </nav>
+            </article>
+            <aside class="sidebar">
+                <hr>
+                <h2>Brandon&#039;s Notes</h2>
+                <h3>Links</h3>
+                <div class="bulletlink"><a href="http://kupczyk.me/noteshttps://github.com/bkupz/">github</a></div>
+                <hr>
+                <p>Links: <a href="http://kupczyk.me">Main Site</a>, <a href="https://www.instagram.com/bkupz/">Instagram</a></p>
+
+            </aside>
+            <footer>
+                <hr>
+
+<!-- FOOTER BEGIN -->
+<p>Brandon Kupczyk - 2018 -</p>
+
+<!-- FOOTER END -->
+
+            </footer>
+        </main>
+
+        <script src="http://kupczyk.me/notes/assets/toc.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/plugins/autoloader/prism-autoloader.min.js"></script>
+        <script>Prism.plugins.autoloader.languages_path = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/";</script>
+        <link rel="stylesheet" href="http://kupczyk.me/notes/assets/prism.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/js-search@1.4.2/dist/umd/js-search.min.js"></script>
+        <script src="http://kupczyk.me/notes/assets/search.js"></script>
+    </body>
+</html>
