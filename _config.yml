@@ -11,12 +11,12 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Brandon Kupczyk"
-resume_title:                   "Full time student"
+resume_title:                   "Software Developer at Raytheon Applied Signal Technology" 
 resume_contact_email:           "Kupczyk.Brandon@gmail.com"
 resume_contact_telephone:       "630-864-8011"
 resume_contact_address:         "455 S. Sunnyside, Elmhurst"
 resume_header_contact_info: "455 S. Sunnyside, Elmhurst | 630-864-8011 | Kupczyk.Brandon@gmail.com"
-resume_header_intro: "<p>Hi I'm Brandon, a Senior in the Computer Engineering program at Marquette University. I am currently looking for a full time software development position where I have the opportunity to learn and create!</p>"
+resume_header_intro: "<center><p>Hi I'm Brandon, I just graduated from Marquette University in May of 2018 and am currently a software developer at Raytheon in Salt Lake City! </p></center>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
