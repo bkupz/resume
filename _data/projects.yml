@@ -2,11 +2,11 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # donutfinder.io
-- project: nflarreststats
-  role: Final team project for Introduction to Artifical Intelegence
+- project: myDiskplayer
+  role: A quarentine project that uses a floppy disk reader and a raspberry pi to play albums on Spotify
   #duration: 2012 &mdash; Present
   # url: "#"
-  description: Analysed NFL players and teams as a network to shed light on criminal activity. Found that there is a high betweenness in some of the NFL teams, meaning that some teams have a higher tolerance for crime.
+  description: This project uses raspotify which turns your raspberry pi into a Spotify connect device, spotipy which allows you to cast music and a floppy disk reader to read saved uri's - similar to urls but for Spotify - to play music like a 90's version of a record player
 
 #Springfield Donut Eater's User Group
 - project: PBAutoRespond
