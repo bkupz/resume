@@ -1,5 +1,18 @@
 # Jobs
 # Springfield Nuclear Power Plant
+- company: Raytheon Applied Signal Technology  
+  position: Software Engineer II
+  duration: Aug, 2018 &mdash; Present
+  summary:  <ul class="resume-item-list">
+              <li>Contributing to a dynamic cross-disciplinary team</li>
+              <li>Run weekly software discipline/design meetings</li>
+              <li>Developing C++ for embedded and cross-platform desktop applications – Centos7 and Windows</li>
+              <li>Working extensively with Qt and embedded software interfacing with hardware</li>
+              <li>Created an automated cross platform build system (embedded, Linux and Windows)</li>
+              <li>Investigated and implemented mapping software based on Leaflet and NodeJS</li>
+            </ul>
+
+
 - company: Marquette Embedded SystemS Lab
   position: Undergraduate Researcher
   duration: Jun, 2017 &mdash; May, 2018
